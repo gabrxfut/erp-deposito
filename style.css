@@ -1,0 +1,84 @@
+:root {
+    --main-azul-costeno-color: #1e4fd6;
+    --main-amarillo-arena-color: #f7c600;
+    --main-rojo-de-la-c-color: #d21f16;
+    --main-verde-palma-color: #0a7a4c;
+    --main-negro-sombrero-color: #161616;
+    --main-fondo-blanco-color: #f2f5fc;
+    --main-texto-lilita-one: "Lilita One", sans-serif;
+    --main-texto-atkinson-hyperlegible: "Atkinson Hyperlegible", sans-serif;
+    --main-texto-atkinson-hyperlegible-mono: "Atkinson Hyperlegible Mono", sans-serif;
+}
+
+body {
+    background-color: var(--main-fondo-blanco-color);
+    font-family: var(--main-texto-atkinson-hyperlegible);
+}
+
+header {
+    background-color: var(--main-azul-costeno-color);
+}
+
+.texto-blanco {
+    color: var(--main-fondo-blanco-color);
+}
+
+.texto-negro {
+    color: var(--main-negro-sombrero-color);
+}
+
+.texto-azul {
+    color: var(--main-azul-costeno-color);
+}
+
+.boton-azul {
+    background-color: var(--main-azul-costeno-color);
+    color: var(--main-fondo-blanco-color);
+    border: var(--main-azul-costeno-color) 1px solid;
+}
+
+.boton {
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.texto1 {
+    font-family: var(--main-texto-lilita-one);
+}
+
+.texto2 {
+    font-family: var(--main-texto-atkinson-hyperlegible);
+}
+
+.texto3 {
+    font-family: var(--main-texto-atkinson-hyperlegible-mono);
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.etiqueta {
+    border: unset;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.etiqueta-inventario {
+    background-color: var(--main-fondo-blanco-color);
+}
+
+.etiqueta-facturar {
+    background-color: var(--main-amarillo-arena-color);
+}
+
+.etiqueta-stock {
+    background-color: var(--main-rojo-de-la-c-color);
+}
+
+.etiqueta-caja {
+    background-color: var(--main-verde-palma-color);
+}
