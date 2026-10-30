@@ -5,6 +5,7 @@
     --main-verde-palma-color: #0a7a4c;
     --main-negro-sombrero-color: #161616;
     --main-fondo-blanco-color: #f2f5fc;
+    --main-crema-color: #f3ebd8;
     --main-texto-lilita-one: "Lilita One", sans-serif;
     --main-texto-atkinson-hyperlegible: "Atkinson Hyperlegible", sans-serif;
     --main-texto-atkinson-hyperlegible-mono: "Atkinson Hyperlegible Mono", sans-serif;
@@ -13,10 +14,46 @@
 body {
     background-color: var(--main-fondo-blanco-color);
     font-family: var(--main-texto-atkinson-hyperlegible);
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+
 }
 
 header {
     background-color: var(--main-azul-costeno-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex: 1 1 560px;
+}
+
+.panel-contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 50px;
+}
+
+section {
+    flex: 1 1 480px;
+}
+
+.logo {
+    border-radius: 20px;
+}
+
+.franja-vueltiao {
+    fill: none;
+    stroke: var(--main-negro-sombrero-color);
+    stroke-width: 3;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    background-color: var(--main-crema-color);
 }
 
 .texto-blanco {
@@ -58,7 +95,8 @@ header {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
+    padding-left: 0;
 }
 
 .etiqueta {
