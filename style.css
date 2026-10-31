@@ -218,10 +218,15 @@ input {
     gap: 12px;
     padding: 16px 12px;
     border-top: 1px solid var(--main-negro-sombrero-color);
+    margin-top: auto;
 }
 
 .menu-lateral .logo {
     margin: 20px;
+}
+
+.usuario-menu a {
+    margin-left: auto;
 }
 
 @media(max-width:768px) {
