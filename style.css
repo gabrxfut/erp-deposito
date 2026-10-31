@@ -60,6 +60,7 @@ h1 {
 .logo {
     border-radius: 20px;
     box-shadow: 10px 10px 0 var(--main-azul-sombra-color);
+    transform: rotate(-2deg);
 }
 
 .franja-vueltiao {
@@ -166,11 +167,17 @@ input {
 .menu-lateral {
     flex: 1 1 250px;
     background-color: var(--main-azul-costeno-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-lateral ul {
     list-style: none;
-    padding: 0;
+    padding: 16px 12px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .contenido-panel {
@@ -182,6 +189,39 @@ input {
     align-items: center;
     min-height: 48px;
     text-decoration: none;
+    padding: 0 14px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.menu-lateral a:hover {
+    background-color: var(--main-azul-sombra-color);
+}
+
+.menu-lateral a[aria-current="page"] {
+    background-color: var(--main-amarillo-arena-color);
+    color: var(--main-negro-sombrero-color);
+}
+
+.avatar {
+    background-color: var(--main-amarillo-arena-color);
+    color: var(--main-negro-sombrero-color);
+    border-radius: 60%;
+    padding: 10px 15px;
+    font-weight: 700;
+}
+
+.usuario-menu {
+    color: var(--main-fondo-blanco-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 12px;
+    border-top: 1px solid var(--main-negro-sombrero-color);
+}
+
+.menu-lateral .logo {
+    margin: 20px;
 }
 
 @media(max-width:768px) {
