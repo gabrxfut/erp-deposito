@@ -163,12 +163,25 @@ input {
     max-width: 400px;
 }
 
-.menu-lateral{
+.menu-lateral {
     flex: 1 1 250px;
+    background-color: var(--main-azul-costeno-color);
 }
 
-.contenido-panel{
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contenido-panel {
     flex: 999 1 560px;
+}
+
+.menu-lateral a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    text-decoration: none;
 }
 
 @media(max-width:768px) {
