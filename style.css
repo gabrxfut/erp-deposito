@@ -7,6 +7,8 @@
     --main-fondo-blanco-color: #f2f5fc;
     --main-crema-color: #f3ebd8;
     --main-azul-sombra-color: #052886;
+    --main-claro-color: #fff;
+    --main-gris-color: #d5ddf2;
     --main-texto-lilita-one: "Lilita One", sans-serif;
     --main-texto-atkinson-hyperlegible: "Atkinson Hyperlegible", sans-serif;
     --main-texto-atkinson-hyperlegible-mono: "Atkinson Hyperlegible Mono", sans-serif;
@@ -180,9 +182,7 @@ input {
     gap: 4px;
 }
 
-.contenido-panel {
-    flex: 999 1 560px;
-}
+
 
 .menu-lateral a {
     display: flex;
@@ -227,6 +227,61 @@ input {
 
 .usuario-menu a {
     margin-left: auto;
+}
+
+.contenido-panel {
+    flex: 999 1 560px;
+    padding: 28px 32px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.resumen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+}
+
+.tarjeta {
+    border-radius: 18px;
+    padding: 20px 22px;
+}
+
+.tarjeta-ventas {
+    background-color: var(--main-azul-costeno-color);
+    color: var(--main-fondo-blanco-color);
+}
+
+.tarjeta-caja {
+    background-color: var(--main-amarillo-arena-color);
+    color: var(--main-negro-sombrero-color);
+}
+
+.tarjeta-stock {
+    background-color: var(--main-rojo-de-la-c-color);
+    color: var(--main-fondo-blanco-color);
+}
+
+.tarjeta-vendido {
+    border: 1px solid var(--main-gris-color);
+    background-color: var(--main-claro-color);
+}
+
+.tarjeta-elemento {
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 6px 0;
+}
+
+.tarjeta-vendido .tarjeta-elemento {
+    font-size: 25px;
+}
+
+.titulo-contenido {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
 }
 
 @media(max-width:768px) {
