@@ -43,7 +43,7 @@ h1 {
     padding: 48px 64px;
 }
 
-main {
+.main-sesion {
     flex: 1 1 480px;
     display: flex;
     flex-direction: column;
@@ -161,6 +161,14 @@ input {
 .formulario-sesion {
     width: 100%;
     max-width: 400px;
+}
+
+.menu-lateral{
+    flex: 1 1 250px;
+}
+
+.contenido-panel{
+    flex: 999 1 560px;
 }
 
 @media(max-width:768px) {
